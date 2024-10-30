@@ -38,6 +38,8 @@ public class Ændremenukort {
         if (index >= 0 && index < menyPizza.size()) {
             ValuesOfPizza removedPizza = menyPizza.remove(index);
             System.out.println("Pizza '" + removedPizza.navn + "' er blevet slettet fra menuen.");
+            System.out.println("Opdateret menukort:");
+            visAllePizzaer();
         } else {
             System.out.println("Ugyldigt valg. Prøv igen.");
         }
